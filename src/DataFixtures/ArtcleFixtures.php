@@ -20,7 +20,7 @@ class ArtcleFixtures extends Fixture
                     ->setContent("Contentu de l'article n°$i ")
                     ->setImage("http://placehold.it/350x150")
                     ->setCreatedAt(new \DateTime());
-
+                    
                 $manager->persist($article);
         }
   
