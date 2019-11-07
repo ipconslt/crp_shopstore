@@ -36,7 +36,7 @@ class ArtcleFixtures extends Fixture
             
             $content = '<p>'.join($faker->paragraphs(5),'</p><p>').'</p>';
 
-            $article->setTitle($faker->sentence())
+            $article->setTitle($faker->sentence($nb = 5, $asText = false))
                     ->setContent($content)
                     ->setImage($faker->imageUrl())
                     ->setCreatedAt(new \DateTime())
