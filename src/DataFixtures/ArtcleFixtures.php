@@ -24,7 +24,7 @@ class ArtcleFixtures extends Fixture
         for ($i=0; $i <=10 ; $i++) {
             $categorie = new Categorie();
             $categorie->setTitre($faker->sentence())
-                      ->setResume($faker->paragraph());
+                      ->setResume($faker->text($maxNbChars = 20));
                     
                     $manager->persist($categorie);
 
